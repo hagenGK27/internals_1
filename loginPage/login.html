@@ -11,26 +11,32 @@
 
 </head>
 <body>
-    <div class="staff_login">
-        <form name="staffForm" id="sForm" action="/adminPage/admin.html">
-            <h1>Staff Login</h1>
-            <label for="userName">Username:</label>
-            <input type="text" name="userName" id="userName">
-            <label for="pwd">Password:</label>
-            <input type="password" name="pwd" id="password">
-        </form>
-        <button type="submit" value="Submit">Login</button>
-    </div>
-    
+
+    <!--Admin Login-->
     <div class="admin_login">
-        <form>
+        <!--action sends the user to the next file/website, if onsubmit="return validateAdminLogin()" returns true -->
+        <form name="adminForm" id="aForm" action="../adminPage/admin.html" onsubmit="return validateAdminLogin()" method="post">
             <h1>Admin Login</h1>
-            <input type="email" name="email" id="mail" placeholder="Enter your E-Mail">
-            <input type="password" name="pwd" id="password" placeholder="Enter your Password">
+            <label for="username">Username:</label><br>
+            <input type="text" name="username" id="adminUsername" required><br><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" name="pwd" id="adminPassword" required><br><br>
+            <button type="submit" id="submitAdmin">Login</button>
+
         </form>
-        <button type="submit">Login</button>
     </div>
 
-
+    <!--Staff Login-->
+    <div class="staff_login">
+        <!--action sends the user to the next file/website, if onsubmit="return validateStaffLogin()" returns true -->
+        <form name="staffForm" id="sForm" action="../staffPage/staff.html" onsubmit="return validateStaffLogin()" method="post">
+            <h1>Staff Login</h1>
+            <label for="username">Username:</label><br>
+            <input type="text" name="username" id="staffUsername" required><br><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" name="pwd" id="staffPassword" required><br><br>
+            <button type="submit" id="submitStaff">Login</button>
+        </form>
+    </div>
 </body>
 </html>
