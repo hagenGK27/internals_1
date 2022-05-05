@@ -36,7 +36,7 @@ body{
 .form input
 {
     width: 100%;    
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 15px;
     border-radius: 5px;
     border-style: groove;
@@ -51,9 +51,11 @@ body{
 
 .form button
 {
+    align-items: center;
     width: 100%;
     font-size: 16px;
     font-weight: bold;
+    color: white;
     margin-bottom: 15px;
     border-radius: 5px;
     border-style: groove;
