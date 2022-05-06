@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Staff</title>
+
+    <link rel="stylesheet" href="addStaff.css">
+
+</head>
+<body>
+    
+    <div class="add">
+
+        <!--You could possibly make kind of a pop up window.
+            but i dont know how to do it, i splitted the files for now on.-->
+            <h1>Add a <span>new Staff</span></h1>
+            <div class="data" id="data">
+                <form id="staff">
+                    <!--input 4 student ID-->
+                    <input type="text" name="id" id="id" required placeholder="Enter your staff ID"><br><br>
+                    
+                    <!--input 4 first and last name-->
+                    <input type="text" name="first_name" id="fname" required placeholder="Enter your first name"><br><br>
+                    <input type="text" name="last_name" id="lname" required placeholder="Enter your last name"><br><br>
+                    
+                    <!--extra label for the DOB-->
+                    <label for="birthday">Enter your date of birth:</label><br>
+                    <input type="date" name="birthday" id="dob" required><br><br>
+                    
+                    <!--select gender-->
+                    <label for="gender">Select your gender:</label><br>
+                    <input type="radio" name="gender" value="Male" required>Male<br><br>
+                    <input type="radio" name="gender" value="Female" required>Female<br><br>
+                    
+                    <!--mail input-->
+                    <input type="email" name="email" id="email" required placeholder="Enter your E-Mail"><br><br>
+                    
+                    <!--buttons to add or go back by cancel -->
+                    <div class="buttons">
+                        <form name="btnForm" action="../staff/staff.html">
+                            <button type="submit">Add</button>
+                        </form>
+                        <form name="btnForm" action="../staff/staff.html">
+                            <button type="submit">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -12,9 +12,9 @@
     <div class="student_view">
         <nav>
             <ul>
-                <li><a href="../adminPage/admin.html">HOME</a></li>
+                <li><a href="../admin.html">HOME</a></li>
                 <li><a href="../student/student.html">STUDENTS</a></li>
-                <li><a href="#">STAFF</a></li>
+                <li><a href="../staff/staff.html">STAFF</a></li>
             </ul>
         </nav>
 
@@ -22,7 +22,7 @@
             <h1>All Students</h1>
             
             <div class="buttons">
-                <form name="btnForm" action="#">
+                <form name="btnForm" action="../operations/add.html">
                     <button type="submit">Add</button>
                 </form>
                 <form name="btnForm" action="#">
@@ -32,6 +32,23 @@
                     <button type="submit">Delete</button>
                 </form>
             </div>
+
+
+            <!--table to list the students and staff-->
+            <table class="student_table">
+                <tr>
+                    <th>Student_ID</th>
+                    <th>First_Name</th>
+                    <th>Last_Name</th>
+                    <th>DOB</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Email_ID</th>
+                </tr>
+
+
+            </table>
+
         </div>
         
     </div>

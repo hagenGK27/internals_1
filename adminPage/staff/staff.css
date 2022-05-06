@@ -4,7 +4,6 @@ body
     padding: 0%;
     margin: 0%;
     font-family: 'Times New Roman', Times, serif;
-    box-sizing: border-box;
 }
 
 nav
@@ -45,32 +44,47 @@ nav ul li a:hover
     margin-left: 250px;
     margin-right: 250px;
     margin-top: 10px;
-    padding: 70px 150px 310px 150px;
+    padding: 70px 150px 328px 150px;
 }
 
 .buttons
 {
+    padding-left: 600px;
     display: flex;
     justify-content: space-between;
-    margin-top: 90px;
 }
 
 button
 {
-    width: 350px;
-    padding: 80px;
+    text-align: center;
+    width: 80px;
+    height: 30px;
     background-color: lightblue;
+    color: black;
     border-radius: 4px;
     border: 2px;
-    color: white;
-    font-size: 16px;
-    text-align: center;
 }
 
 button:hover
 {
-    color: black;
+    color: white;
     transition: .6s;
     cursor: pointer;
 }
 
+table
+{   
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    border-color: black;
+}
+
+.staff_table th
+{
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    border: 2px solid;
+    background-color: lightblue;
+}
