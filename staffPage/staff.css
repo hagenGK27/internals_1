@@ -1,0 +1,25 @@
+body
+{
+    background-color: lightgrey;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.staff_view
+{
+    margin-top: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 8%;
+    background-color: white;
+}
+
+.staff_view h1
+{
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+

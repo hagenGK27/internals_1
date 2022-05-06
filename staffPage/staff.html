@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Staff mainpage</title>
+
+    <link rel="stylesheet" href="staff.css">
+
 </head>
 <body>
-    <h1>Wellcome on Staff-Page</h1>
+
+    <div class="staff_view">
+        <!--
+            course selection
+            you could make a navigation bar that opens a new page onclick
+            but then you would need a single page for every course as well 
+            <nav>
+                <ul id="course_list">
+                    <li></li>
+                </ul>
+                
+            </nav>
+        -->
+        <h1>Course Overview</h1>
+        
+        <select name="course_list" id="courses">
+            <option value="math">Mathematics</option>
+            <option value="prog">Programming</option>
+            <option value="os">Operating System</option>
+            <option value="db">Database</option>
+            <option value="algoDat">Algorithm and Datastructure</option>
+            <option value="webDev">Webdevelopment</option>
+            <option value="cg">Computergrafic</option>
+        </select><br><br>
+
+        <form name="btnForm" action="#">
+            <button type="submit">See Students</button>
+        </form>
+
+    </div>
+
 </body>
 </html>
