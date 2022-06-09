@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <script src="add.js"></script>
     <link rel="stylesheet" href="add.css">
 
 </head>
@@ -17,7 +18,7 @@
             but i dont know how to do it, i splitted the files for now on.-->
             <h1>Add a <span>new Student</span></h1>
             <div class="data" id="data">
-                <form id="student">
+                <form id="student" onsubmit="return validateDate()">
                     <!--input 4 student ID-->
                     <input type="text" name="id" id="id" required placeholder="Enter your student ID"><br><br>
                     
@@ -44,6 +45,14 @@
                     
                     <!--mail input-->
                     <input type="email" name="email" id="email" required placeholder="Enter your E-Mail"><br><br>
+
+                    <!--add joining date-->
+                    <label id="jDateHead" for="joiningDate">Joining Date:</label>
+                    <h5 id="joiningDate"></h5>
+                    <script type="text/javascript">
+                        let today = new Date();
+                        document.getElementById("joiningDate").innerHTML = 2015 + "-" + today.getMonth() + "-" + today.getDate();
+                    </script>
                     
                     <!--buttons to add or go back by cancel -->
                     <div class="buttons">
